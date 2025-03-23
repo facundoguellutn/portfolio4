@@ -76,8 +76,7 @@ const projects: Project[] = [
 
 export default function ProjectsCarousel() {
   return (
-    <section className="w-full flex items-center justify-center flex-col mt-20">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full flex items-center justify-center flex-col mt-20 max-w-7xl mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Proyectos Destacados</h2>
           <p className="text-lg text-slate-700 max-w-2xl mx-auto">
@@ -104,7 +103,6 @@ export default function ProjectsCarousel() {
             <CarouselNext className="relative static" />
           </div>
         </Carousel>
-      </div>
     </section>
   )
 }
@@ -154,7 +152,7 @@ function ProjectCard({ project }: { project: Project }) {
 
               <Button
                 variant="ghost"
-                className="px-0 w-fit text-slate-900 font-medium hover:bg-transparent hover:text-slate-700"
+                className="px-6 py-[2px] w-fit text-slate-900 font-medium hover:bg-transparent hover:text-slate-700 border-[1px] border-slate-400 rounded-full"
               >
                 Explorar <ExternalLink size={16} className="ml-1" />
               </Button>
