@@ -14,7 +14,7 @@ const Hero = () => {
 
         <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-slate-900">
           <LayoutGroup>
-            <motion.p className="flex flex-wrap items-center" layout>
+            <motion.div className="flex flex-wrap items-center" layout>
               <motion.span
                 layout
                 transition={{ type: "spring", damping: 30, stiffness: 400 }}
@@ -41,7 +41,7 @@ const Hero = () => {
                   rotationInterval={5000}
                 />
               </motion.div>
-            </motion.p>
+            </motion.div>
           </LayoutGroup>
         </div>
 
