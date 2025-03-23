@@ -7,7 +7,7 @@ import { Download, Mail } from "lucide-react"
 const Hero = () => {
   return (
     <div className="min-h-screen w-full px-4 sm:px-6 md:px-8 py-8 flex flex-col md:flex-row items-center justify-center md:justify-around gap-8">
-      <div className="flex flex-col max-w-xl space-y-4 sm:space-y-6 order-2 md:order-1">
+      <div className="flex flex-col max-w-xl space-y-4 sm:space-y-6 order-2 md:order-1 items-center w-full md:w-auto md:items-center">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium text-slate-900">Hola, soy Facundo👋</h1>
 
         <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-slate-900">
@@ -24,7 +24,7 @@ const Hero = () => {
                   "creativo digital",
                   "full-stack developer",
                 ]}
-                mainClassName="text-white px-2 sm:px-3 bg-[#FF5941] overflow-hidden py-1 justify-center rounded-lg ml-2"
+                mainClassName="text-white px-2 sm:px-3 bg-slate-800 overflow-hidden py-1 justify-center rounded-lg ml-2"
                 staggerFrom={"last"}
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
@@ -38,17 +38,17 @@ const Hero = () => {
           </LayoutGroup>
         </div>
 
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-lg">
-          Construyo experiencias digitales eficientes y escalables con tecnologías modernas, transformando ideas en
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-lg text-center">
+          Construyo experiencias digitales eficientes y escalables, transformando ideas en
           soluciones innovadoras.
         </p>
 
-        <div className="pt-4 sm:pt-6 w-full flex flex-wrap sm:flex-nowrap gap-3 sm:gap-4">
-          <button className="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-[#FF5941] text-white text-sm sm:text-base rounded-[32px] hover:bg-[#FF5941]/90 transition-colors whitespace-nowrap">
+        <div className="pt-4 sm:pt-6 w-full flex flex-wrap sm:flex-nowrap gap-3 sm:gap-4 items-center justify-center">
+          <button className="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-slate-800 text-white text-sm sm:text-base rounded-[32px] hover:bg-slate-800/90 transition-colors whitespace-nowrap">
             <Mail size={16} className="sm:size-18" />
             <span>Contacto</span>
           </button>
-          <button className="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 border-2 border-[#FF5941] text-[#FF5941] text-sm sm:text-base rounded-[32px] hover:bg-[#FF5941]/10 transition-colors whitespace-nowrap">
+          <button className="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 border-2 border-slate-800 text-slate-800 text-sm sm:text-base rounded-[32px] hover:bg-slate-800/10 transition-colors whitespace-nowrap">
             <Download size={16} className="sm:size-18" />
             <span>Descargar CV</span>
           </button>
