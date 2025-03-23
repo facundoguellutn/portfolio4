@@ -1,12 +1,14 @@
 import React from 'react'
 import { Button } from "@/components/ui/button"
+import dynamic from 'next/dynamic'
+// import Hero from './Hero'
 
+const Hero = dynamic(() => import('./Hero'), { ssr: false })
 
 const Landing = () => {
   return (
-    <main className='w-full h-screen flex items-center justify-center'>
-        <h1 className='text-slate-800 font-semibold text-4xl'>Hola, soy Facundo</h1>
-        <Button variant="outline">Button</Button>
+    <main className='w-full min-h-screen flex items-start justify-start px-8 sm:px-10 lg:px-16 xl:px-24'>
+        <Hero />
     </main>
   )
 }
