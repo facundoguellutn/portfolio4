@@ -9,7 +9,7 @@ const Landing = () => {
   return (
     <main className='w-full min-h-screen flex flex-col items-start justify-start px-8 sm:px-10 lg:px-16 xl:px-24'>
         <Hero />
-        <div className='w-full h-screen'>
+        <div className='w-full h-screen' id='proyectos'>
             hola
         </div>
     </main>

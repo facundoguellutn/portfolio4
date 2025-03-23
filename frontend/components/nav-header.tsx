@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
@@ -13,12 +13,11 @@ function NavHeader() {
   return (
     <ul
       className="relative mx-auto flex w-fit rounded-full border-2 border-slate-700 bg-white p-1"
-      onMouseLeave={() => setPosition((pv) => ({ ...pv, opacity: 0 }))}
-    >
-      <Tab setPosition={setPosition}>Sobre mi</Tab>
-      <Tab setPosition={setPosition}>Proyectos</Tab>
-      <Tab setPosition={setPosition}>Servicios</Tab>
-      <Tab setPosition={setPosition}>Contacto</Tab>
+      onMouseLeave={() => setPosition((pv) => ({ ...pv, opacity: 0 }))}>
+      <Tab setPosition={setPosition} href="#sobre-mi">Sobre mí</Tab>
+      <Tab setPosition={setPosition} href="#proyectos">Proyectos</Tab>
+      <Tab setPosition={setPosition} href="#servicios">Servicios</Tab>
+      <Tab setPosition={setPosition} href="#contacto">Contacto</Tab>
 
       <Cursor position={position} />
     </ul>
@@ -28,9 +27,11 @@ function NavHeader() {
 const Tab = ({
   children,
   setPosition,
+  href,
 }: {
   children: React.ReactNode;
   setPosition: any;
+  href: string;
 }) => {
   const ref = useRef<HTMLLIElement>(null);
   return (
@@ -46,9 +47,8 @@ const Tab = ({
           left: ref.current.offsetLeft,
         });
       }}
-      className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs text-white mix-blend-difference md:px-5 md:py-3 md:text-base"
-    >
-      {children}
+      className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs text-white hover:text-white mix-blend-difference md:px-5 md:py-3 md:text-base">
+      <a href={href}>{children}</a>
     </li>
   );
 };

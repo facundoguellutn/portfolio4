@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.className} w-[100vw] max-w-[100vw] flex flex-col relative`}
+        className={`${outfit.className} w-[100vw] max-w-[100vw]`}
       >
         <header className="justify-center items-center w-full pt-6 fixed z-50 ">
           <NavHeader />
