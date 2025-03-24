@@ -76,12 +76,12 @@ const projects: Project[] = [
 
 export default function ProjectsCarousel() {
   return (
-    <section className="w-full flex items-center justify-center flex-col mt-20 max-w-7xl mx-auto">
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Proyectos Destacados</h2>
-          <p className="text-lg text-slate-700 max-w-2xl mx-auto">
+    <section className="w-full flex items-center justify-center flex-col mt-20 lg:pt-20 max-w-7xl mx-auto">
+        <div className="mb-10 lg:mb-12 text-start lg:text-center w-full">
+          <h2 className="title text-start lg:text-center">Proyectos Destacados</h2>
+          {/* <p className="shortDescription">
             Una selección de los proyectos en los que he trabajado, mostrando mi experiencia en diseño y desarrollo.
-          </p>
+          </p> */}
         </div>
 
         <Carousel

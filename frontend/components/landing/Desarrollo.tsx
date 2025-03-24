@@ -7,10 +7,10 @@ const Desarrollo = () => {
   const ref = useRef<any>(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
   return (
-    <div className="w-full mx-auto" ref={ref}>
+    <div className="w-full mx-auto maxScreen" ref={ref}>
       <div className="flex flex-col md:flex-row items-center justify-around gap-10">
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+          <h2 className="title">
             Desarrollo <span className="text-slate-800">Software</span>
           </h2>
           <p className="text-lg text-slate-700 max-w-lg">

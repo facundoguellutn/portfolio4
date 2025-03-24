@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import NavHeader from "@/components/nav-header";
+import NavMobile from "@/components/mobileNav/NavMobile";
 
 const inter = Inter({ subsets: ["latin"] });
 const outfit = Outfit({ subsets: ["latin"] });
@@ -31,7 +32,9 @@ export default function RootLayout({
       >
         <header className="justify-center items-center w-full fixed z-50 ">
           <div className="w-full lg:flex hidden  pt-6 "><NavHeader /></div>
-          <div className="w-full lg:hidden w-full bg-white">NavMobile</div>
+          <div className="w-full lg:hidden w-full bg-white">
+            <NavMobile/>
+          </div>
           
         </header>
         {children}

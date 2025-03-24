@@ -70,3 +70,21 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .maxScreen{
+    @apply max-w-[1200px];
+  }
+
+  .title{
+    @apply text-3xl md:text-4xl lg:text-[40px] font-bold text-slate-900 tracking-tight;
+  }
+
+  .shortDescription{
+    @apply text-base sm:text-lg md:text-xl text-muted-foreground max-w-lg text-center;
+  }
+
+  .paragraph{
+    @apply text-lg text-slate-700 max-w-lg;
+  }
+}

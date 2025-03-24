@@ -6,6 +6,7 @@ import Hero from './Hero'
 import ProjectsCarousel from './ProjectsCarousel'
 import Design from './Design'
 import Tecnologias from './Tecnologias'
+import Contacto from './Contacto'
 
 // const Hero = dynamic(() => import('./Hero'), { ssr: false })
 
@@ -17,6 +18,7 @@ const Landing = () => {
         <Design />
         <ProjectsCarousel />
         <Tecnologias />
+        <Contacto />
         <div className='w-full mt-10 h-[500px]'></div>
     </main>
   )

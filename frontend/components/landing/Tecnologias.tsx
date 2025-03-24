@@ -6,8 +6,8 @@ import type { SVGProps } from "react";
 
 const Tecnologias = () => {
   return (
-    <div className="w-full mx-auto mt-20 pt-20 flex flex-col items-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-slate-900">
+    <div className="w-full mx-auto mt-20 lg:pt-20 flex flex-col items-center">
+      <h2 className="title mb-8 lg:mb-14 lg:text-center text-start w-full">
         Mi Stack Tecnológico
       </h2>
       <div className="flex flex-wrap max-w-[1500px] gap-10 items-center justify-center">
