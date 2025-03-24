@@ -20,7 +20,8 @@ import { Pointer } from "../magicui/pointer";
 import { motion } from "motion/react";
 import { LetterSwapForward } from "../ui/letter-swap";
 import Link from "next/link";
-import { Layers } from "lucide-react";
+import { Briefcase, Layers } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 type SocialLink = {
   label: string;
@@ -49,13 +50,19 @@ const SOCIAL_LINKS: SocialLink[] = [
 const Contacto = () => {
   const ref = useRef<any>(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const router = useRouter();
+
+  const handleNavigate = (url: string) => {
+    router.push(url);
+  };
+
   return (
     <div
       className="w-full mt-20 relative lg:pt-20 flex flex-col items-center justify-center"
       ref={ref}
     >
       {isInView && (
-        <div className="justify-center flex flex-col justify-center w-full items-center space-y-4 text-[24px] text-slate-800 text-center">
+        <div className="justify-center flex flex-col  w-full items-center space-y-4 text-[24px] text-slate-800 text-center">
           <VerticalCutReveal
             splitBy="characters"
             staggerDuration={0.05}
@@ -123,11 +130,17 @@ const Contacto = () => {
         className="italic mt-20 mb-10 title pr-4"
       />
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:grid-rows-2 w-full maxScreen ">
-        <Card onClick={()=>{console.log("hola")}} className="col-span-1 row-span-1 overflow-hidden border-none bg-gradient-to-br from-slate-50 to-slate-100 shadow-lg transition-all hover:shadow-xl dark:from-slate-900 dark:to-slate-800">
+        <Card
+          onClick={() => {
+            console.log("hola");
+          }}
+          className="col-span-1 row-span-1 overflow-hidden border-none bg-gradient-to-br from-slate-50 to-slate-100 shadow-lg transition-all hover:shadow-xl dark:from-slate-900 dark:to-slate-800"
+        >
           <CardHeader className="relative pb-2">
             <CardTitle className="text-xl font-bold">Acerca de mí</CardTitle>
             <CardDescription className="text-sm text-slate-600 dark:text-slate-400">
-            Descubre más sobre mi historia, mis pasiones, habilidades y lo que me motiva en la vida y el trabajo.
+              Descubre más sobre mi historia, mis pasiones, habilidades y lo que
+              me motiva en la vida y el trabajo.
             </CardDescription>
           </CardHeader>
           <CardContent className="relative flex h-40 items-center justify-center p-6">
@@ -167,13 +180,19 @@ const Contacto = () => {
           </Pointer>
         </Card>
 
-        <Card className="col-span-1 row-span-1 overflow-hidden border-none bg-gradient-to-br from-blue-50 to-blue-100 shadow-lg transition-all hover:shadow-xl dark:from-blue-900 dark:to-blue-800">
+        <Card
+          onClick={() => {
+            handleNavigate("/experiencia");
+          }}
+          className="col-span-1 row-span-1 overflow-hidden border-none bg-gradient-to-br from-blue-50 to-blue-100 shadow-lg transition-all hover:shadow-xl dark:from-blue-900 dark:to-blue-800"
+        >
           <CardHeader className="relative pb-2">
             <CardTitle className="text-xl font-bold text-blue-700">
               Experiencia Laboral
             </CardTitle>
             <CardDescription className="text-sm text-blue-700 dark:text-blue-300">
-            Un recorrido detallado por mi formación académica, experiencia profesional y proyectos destacados en los que he trabajado.
+              Un recorrido detallado por mi formación académica, experiencia
+              profesional y proyectos destacados en los que he trabajado.
             </CardDescription>
           </CardHeader>
           <CardContent className="relative flex h-40 items-center justify-center p-6">
@@ -185,27 +204,30 @@ const Contacto = () => {
             </Link>
           </CardContent>
           <Pointer className="fill-blue-500">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+            <motion.div
+              animate={{
+                scale: [0.8, 1, 0.8],
+                rotate: [0, 5, -5, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
             >
-              <path
-                d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM10 4h4v2h-4V4zm10 16H4V8h16v12z"
-                fill="currentColor"
-              />
-              <path d="M13 10h-2v3H8v2h3v3h2v-3h3v-2h-3z" fill="currentColor" />
-            </svg>
+              <Briefcase className="text-blue-500" />
+            </motion.div>
           </Pointer>
         </Card>
 
         <Card className="col-span-1 row-span-1 overflow-hidden border-none bg-gradient-to-br from-purple-50 to-purple-100 shadow-lg transition-all hover:shadow-xl dark:from-purple-900 dark:to-purple-800">
           <CardHeader className="relative pb-2">
-            <CardTitle className="text-xl font-bold text-purple-700">Servicios</CardTitle>
+            <CardTitle className="text-xl font-bold text-purple-700">
+              Servicios
+            </CardTitle>
             <CardDescription className="text-sm text-purple-700 dark:text-purple-300">
-            Ofrezco soluciones en desarrollo web, diseño UI/UX, consultoría tecnológica y capacitación profesional personalizada.
+              Ofrezco soluciones en desarrollo web, diseño UI/UX, consultoría
+              tecnológica y capacitación profesional personalizada.
             </CardDescription>
           </CardHeader>
           <CardContent className="relative flex h-40 items-center justify-center p-6">
@@ -217,15 +239,30 @@ const Contacto = () => {
             </Link>
           </CardContent>
           <Pointer>
-            <Layers size={20} className="text-purple-800"/>
+            <motion.div
+              animate={{
+                scale: [0.8, 1, 0.8],
+                rotate: [0, 5, -5, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
+            >
+              <Layers className="text-purple-800" />
+            </motion.div>
           </Pointer>
         </Card>
 
         <Card className="col-span-1 row-span-1 overflow-hidden border-none bg-gradient-to-br from-green-50 to-green-100 shadow-lg transition-all hover:shadow-xl dark:from-green-900 dark:to-green-800">
           <CardHeader className="relative pb-2">
-            <CardTitle className="text-xl font-bold text-green-800">Proyectos</CardTitle>
+            <CardTitle className="text-xl font-bold text-green-800">
+              Proyectos
+            </CardTitle>
             <CardDescription className="text-sm text-green-700 dark:text-green-300">
-            Explora mi portafolio de trabajos, donde combino creatividad e innovación para lograr soluciones impactantes.
+              Explora mi portafolio de trabajos, donde combino creatividad e
+              innovación para lograr soluciones impactantes.
             </CardDescription>
           </CardHeader>
           <CardContent className="relative flex h-40 items-center justify-center p-6">
@@ -237,20 +274,32 @@ const Contacto = () => {
             </Link>
           </CardContent>
           <Pointer>
-            <div className="text-2xl">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zm-11 0h7v7H3v-7z"
-                  fill="#22c55e"
-                />
-              </svg>
-            </div>
+            <motion.div
+              animate={{
+                scale: [0.8, 1, 0.8],
+                rotate: [0, 5, -5, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
+            >
+              <div className="text-2xl">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zm-11 0h7v7H3v-7z"
+                    fill="#22c55e"
+                  />
+                </svg>
+              </div>
+            </motion.div>
           </Pointer>
         </Card>
       </div>
