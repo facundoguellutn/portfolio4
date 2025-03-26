@@ -61,75 +61,15 @@ const Contacto = () => {
       className="w-full mt-20 relative lg:pt-20 flex flex-col items-center justify-center"
       ref={ref}
     >
-      {isInView && (
-        <div className="justify-center flex flex-col  w-full items-center space-y-4 text-[24px] text-slate-800 text-center">
-          <VerticalCutReveal
-            splitBy="characters"
-            staggerDuration={0.05}
-            staggerFrom="first"
-            transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 21,
-            }}
-          >
-            {`Gracias por llegar hasta aquí`}
-          </VerticalCutReveal>
-          <VerticalCutReveal
-            splitBy="characters"
-            staggerDuration={0.05}
-            staggerFrom="last"
-            reverse={true}
-            transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 21,
-              delay: 1.5,
-            }}
-          >
-            {`Espero que hallas disfrutado`}
-          </VerticalCutReveal>
-          <VerticalCutReveal
-            splitBy="characters"
-            staggerDuration={0.05}
-            staggerFrom="center"
-            transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 21,
-              delay: 3,
-            }}
-          >
-            {`Si te gusto lo que viste`}
-          </VerticalCutReveal>
-          <VerticalCutReveal
-            splitBy="characters"
-            staggerDuration={0.05}
-            staggerFrom={5}
-            transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 21,
-              delay: 4,
-            }}
-          >
-            {`No dudes en contactarme`}
-          </VerticalCutReveal>
-          <div className="flex items-center justify-start space-x-3 pt-8">
-            {SOCIAL_LINKS.map((link) => (
-              <MagneticSocialLink key={link.label} link={link.link}>
-                {link.label}
-              </MagneticSocialLink>
-            ))}
-          </div>
-        </div>
-      )}
       <LetterSwapForward
         label="Secciones de interés para explorar"
         reverse={true}
-        className="italic mt-20 mb-10 title pr-4"
+        className="italic mt-20 title pr-4 md:flex hidden mb-10"
       />
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:grid-rows-2 w-full maxScreen ">
+      <h1 className="title  mb-6 flex md:hidden">
+        Secciones de interés para explorar
+      </h1>
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:grid-rows-2 w-full maxScreen pb-20">
         <Card
           onClick={() => {
             console.log("hola");
@@ -302,6 +242,74 @@ const Contacto = () => {
             </motion.div>
           </Pointer>
         </Card>
+      </div>
+      {isInView ? (
+        <div className="justify-center flex flex-col  w-full items-center space-y-4 text-[24px] text-slate-800 text-center">
+          <div className="w-full hidden sm:flex flex-col  items-center space-y-4">
+            <VerticalCutReveal
+              splitBy="characters"
+              staggerDuration={0.05}
+              staggerFrom="first"
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 21,
+              }}
+            >
+              {`Gracias por llegar hasta aquí`}
+            </VerticalCutReveal>
+            <VerticalCutReveal
+              splitBy="characters"
+              staggerDuration={0.05}
+              staggerFrom="last"
+              reverse={true}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 21,
+                delay: 1.5,
+              }}
+            >
+              {`Espero que hallas disfrutado`}
+            </VerticalCutReveal>
+            <VerticalCutReveal
+              splitBy="characters"
+              staggerDuration={0.05}
+              staggerFrom="center"
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 21,
+                delay: 3,
+              }}
+            >
+              {`Si te gusto lo que viste`}
+            </VerticalCutReveal>
+            <VerticalCutReveal
+              splitBy="characters"
+              staggerDuration={0.05}
+              staggerFrom={5}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 21,
+                delay: 4,
+              }}
+            >
+              {`No dudes en contactarme`}
+            </VerticalCutReveal>
+          </div>
+        </div>
+      ) : (
+        <div className="w-full hidden sm:flex  sm:h-[276px]"></div>
+      )}
+      <span className="text-sm text-slate-500 mt-10">Mis Redes sociales</span>
+      <div className="flex flex-wrap items-center justify-center space-x-3 pt-8 w-full gap-4">
+        {SOCIAL_LINKS.map((link) => (
+          <MagneticSocialLink key={link.label} link={link.link}>
+            {link.label}
+          </MagneticSocialLink>
+        ))}
       </div>
     </div>
   );

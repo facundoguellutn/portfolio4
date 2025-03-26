@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.className} w-[100vw] max-w-[100vw] overflow-x-hidden`}
+        className={`${outfit.className} w-screen overflow-x-hidden `}
       >
         <header className="justify-center items-center w-full fixed z-50 ">
           <div className="w-full lg:flex hidden  pt-6 "><NavHeader /></div>

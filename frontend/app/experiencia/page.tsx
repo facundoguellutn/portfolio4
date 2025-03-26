@@ -141,7 +141,7 @@ const data = [
 
 const Page = () => {
   return (
-    <div className="mainScreen pb-20">
+    <div className="mainScreen pb-20 pt-20 lg:pt-0">
       <div className="w-full mx-auto maxScreen lg:mt-20 pt-10 flex- items-center flex-col ">
         <h1 className="title text-center">Mi experiencia laboral</h1>
         <p className=" mt-4  mb-20 text-center w-full  text-base sm:text-lg md:text-xl text-muted-foreground">

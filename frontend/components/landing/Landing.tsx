@@ -12,7 +12,7 @@ import Contacto from './Contacto'
 
 const Landing = () => {
   return (
-    <main className='mainScreen'>
+    <div className='mainScreen '>
         <Hero />
         <Desarrollo />
         <Design />
@@ -20,7 +20,7 @@ const Landing = () => {
         <Tecnologias />
         <Contacto />
         <div className='w-full mt-10 h-[500px]'></div>
-    </main>
+    </div>
   )
 }
 

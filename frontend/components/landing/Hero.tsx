@@ -6,17 +6,17 @@ import { Download, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen w-full py-8 flex flex-col md:flex-row items-center justify-center md:justify-around gap-8 pt-10 md:pt-0">
+    <div className="min-h-screen w-full py-8 flex flex-col md:flex-row items-center justify-center md:justify-around gap-8 pt-10 md:pt-0 ">
       <div className="flex flex-col max-w-xl space-y-4 sm:space-y-6 order-2 md:order-1 items-center w-full md:w-auto md:items-center">
         <h1 className="title">Hola, soy Facu👋</h1>
 
-        <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-slate-900">
+        <div className="text-md sm:text-3xl lg:text-4xl font-semibold text-slate-900">
           <LayoutGroup>
             <motion.div className="flex flex-wrap items-center" layout>
               <motion.span
                 layout
                 transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                className="font-bold"
+                className="hidden sm:flex font-bold"
               >
                 Soy{" "}
               </motion.span>

@@ -6,11 +6,11 @@ import type { SVGProps } from "react";
 
 const Tecnologias = () => {
   return (
-    <div className="w-full mx-auto mt-20 lg:pt-20 flex flex-col items-center">
+    <div className="w-full mx-auto mt-20 lg:pt-20 flex flex-col items-center ">
       <h2 className="title mb-8 lg:mb-14 lg:text-center text-start w-full">
         Mi Stack Tecnológico
       </h2>
-      <div className="flex flex-wrap max-w-[1500px] gap-10 items-center justify-center">
+      <div className="flex flex-wrap max-w-[1500px] gap-10 items-center justify-center w-full">
         <AnimatedCard
           title="Gestión"
           description="Utilizo herramientas de primer nivel para gestionar proyectos, monitorear errores y analizar el comportamiento de los usuarios."

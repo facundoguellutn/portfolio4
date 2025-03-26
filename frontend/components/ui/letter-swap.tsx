@@ -49,7 +49,7 @@ export function LetterSwapForward({
 
     animate(
       ".letter",
-      { y: reverse ? "100%" : "-100%" },
+      { y: reverse ? "100%" : "-110%" },
       mergeTransition(transition)
     ).then(() => {
       animate(
@@ -75,7 +75,7 @@ export function LetterSwapForward({
       animate(
         ".letter-secondary",
         {
-          top: reverse ? "-100%" : "100%",
+          top: reverse ? "-110%" : "105%",
         },
         {
           duration: 0,
@@ -103,7 +103,7 @@ export function LetterSwapForward({
             <motion.span
               className="absolute letter-secondary"
               aria-hidden={true}
-              style={{ top: reverse ? "-100%" : "100%" }}
+              style={{ top: reverse ? "-110%" : "105%" }}
             >
               {letter}
             </motion.span>
@@ -144,7 +144,7 @@ export function LetterSwapPingPong({
 
       animate(
         ".letter",
-        { y: reverse ? "100%" : "-100%" },
+        { y: reverse ? "100%" : "-110%" },
         mergeTransition(transition)
       )
 
@@ -175,7 +175,7 @@ export function LetterSwapPingPong({
       animate(
         ".letter-secondary",
         {
-          top: reverse ? "-100%" : "100%",
+          top: reverse ? "-110%" : "105%",
         },
         mergeTransition(transition)
       )
@@ -204,7 +204,7 @@ export function LetterSwapPingPong({
             <motion.span
               className="absolute letter-secondary"
               aria-hidden={true}
-              style={{ top: reverse ? "-100%" : "100%" }}
+              style={{ top: reverse ? "-110%" : "105%" }}
             >
               {letter}
             </motion.span>
