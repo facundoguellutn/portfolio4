@@ -137,7 +137,7 @@ export default function Servicios() {
             className="w-full max-w-7xl "
           >
             <div className="w-full flex items-center justify-center mb-12">
-              <ScrollArea>
+              <ScrollArea className="h-[45px] ">
                 <TabsList className="">
                   <TabsTrigger
                     value="frontend"
@@ -315,7 +315,7 @@ export default function Servicios() {
                   </motion.div>
 
                   <motion.div variants={fadeIn}>
-                    <Button className="group flex items-center gap-2 bg-lime-500 hover:bg-lime-600 text-zinc-900">
+                    <Button className="group flex items-center gap-2 bg-lime-600 hover:bg-lime-500 text-white font-semibold rounded-full">
                       <span>Ver proyectos frontend</span>
                       <ChevronRight
                         size={16}
@@ -444,7 +444,7 @@ export default function Servicios() {
                   </motion.div>
 
                   <motion.div variants={fadeIn}>
-                    <Button className="group flex items-center gap-2 bg-lime-500 hover:bg-lime-600 text-zinc-900">
+                    <Button className="group flex items-center gap-2 bg-lime-600 hover:bg-lime-500 text-white font-semibold rounded-full">
                       <span>Ver proyectos backend</span>
                       <ChevronRight
                         size={16}
@@ -619,7 +619,7 @@ export default function Servicios() {
                   </motion.div>
 
                   <motion.div variants={fadeIn}>
-                    <Button className="group flex items-center gap-2 bg-lime-500 hover:bg-lime-600 text-zinc-900">
+                    <Button className="group flex items-center gap-2 bg-lime-600 hover:bg-lime-500 text-white font-semibold rounded-full">
                       <span>Ver proyectos completos</span>
                       <ChevronRight
                         size={16}
@@ -644,12 +644,6 @@ export default function Servicios() {
                     <h3 className="text-2xl font-bold mb-4">
                       Clases de Programación
                     </h3>
-                    <p className="text-zinc-600 mb-6">
-                      Comparto mi conocimiento y experiencia a través de clases
-                      personalizadas de programación. Mi enfoque práctico y
-                      orientado a proyectos te ayudará a dominar las tecnologías
-                      web modernas y desarrollar tus propias aplicaciones.
-                    </p>
                   </motion.div>
 
                   <motion.div variants={staggerContainer} className="space-y-6">
@@ -711,7 +705,7 @@ export default function Servicios() {
                   </motion.div>
 
                   <motion.div variants={fadeIn}>
-                    <Button className="group flex items-center gap-2 bg-lime-500 hover:bg-lime-600 text-zinc-900" onClick={() => {
+                    <Button className="group flex items-center gap-2 bg-lime-600 hover:bg-lime-500 text-white font-semibold rounded-full" onClick={() => {
                       window.open("https://wa.me/+5493515558870", "_blank");
                     }}>
                       <span>Consultar por clases</span>

@@ -256,7 +256,7 @@ const Contacto = () => {
                 damping: 21,
               }}
             >
-              {`Gracias por llegar hasta aquí`}
+              {`Gracias por llegar hasta aquí.`}
             </VerticalCutReveal>
             <VerticalCutReveal
               splitBy="characters"
@@ -270,7 +270,7 @@ const Contacto = () => {
                 delay: 1.5,
               }}
             >
-              {`Espero que hallas disfrutado`}
+              {`Espero que lo hayas disfrutado.`}
             </VerticalCutReveal>
             <VerticalCutReveal
               splitBy="characters"
@@ -283,7 +283,7 @@ const Contacto = () => {
                 delay: 3,
               }}
             >
-              {`Si te gusto lo que viste`}
+              {`Si te gusto lo que viste,`}
             </VerticalCutReveal>
             <VerticalCutReveal
               splitBy="characters"
@@ -296,7 +296,7 @@ const Contacto = () => {
                 delay: 4,
               }}
             >
-              {`No dudes en contactarme`}
+              {`no dudes en contactarme.`}
             </VerticalCutReveal>
           </div>
         </div>
