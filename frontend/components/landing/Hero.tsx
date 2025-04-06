@@ -68,7 +68,7 @@ const Hero = () => {
           <div className="pt-4 sm:pt-6 w-full flex flex-wrap sm:flex-nowrap gap-3 sm:gap-4 items-center justify-center">
             <a
               href="#footer"
-              className="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-slate-800 text-white text-sm sm:text-base rounded-[32px] hover:bg-slate-800/90 transition-colors whitespace-nowrap"
+              className="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-slate-800/90 text-white text-sm sm:text-base rounded-[32px] hover:bg-slate-800/70 border-b-4 border-r-4  border-slate-800/90 hover:border-slate-900/70 transition-colors whitespace-nowrap"
             >
               <Mail size={16} className="sm:size-18" />
               <span>Contacto</span>

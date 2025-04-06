@@ -40,7 +40,7 @@ export default function Footer({
 
   const navigationLinks = [
     { name: "Inicio", href: "/" },
-    { name: "Acerca de mí", href: "/acerca-de-mi" },
+    { name: "Acerca de mí", href: "/sobre-mi" },
     { name: "Proyectos", href: "/proyectos" },
     { name: "Experiencia", href: "/experiencia" },
     { name: "Servicios", href: "/servicios" },

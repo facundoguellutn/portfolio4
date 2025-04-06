@@ -768,10 +768,10 @@ export default function Servicios() {
               
               {/* Contenido */}
               <div className="w-full md:w-1/2 bg-zinc-900 p-8 md:p-12 flex flex-col justify-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                <h2 className="text-2xl md:text-4xl font-bold text-white mb-6">
                   ¿Listo para dar vida a tu proyecto?
                 </h2>
-                <p className="text-lg text-zinc-300 mb-8">
+                <p className="text-md md:text-lg text-zinc-300 mb-8">
                   Contáctame hoy mismo para discutir cómo puedo ayudarte a alcanzar
                   tus objetivos digitales. Estoy disponible para proyectos de
                   desarrollo web, consultoría y clases de programación.
@@ -779,7 +779,7 @@ export default function Servicios() {
                 <div className="flex flex-wrap gap-4">
                   <Button
                     size="lg"
-                    className="bg-lime-500 hover:bg-lime-600 text-zinc-900 rounded-[32px] border-t-2 border-l-2 border-b-4 border-r-4 border-lime-600/90 text-[17px] font-semibold"
+                    className="bg-lime-500 hover:bg-lime-600 text-zinc-900 rounded-[32px] border-t-2 border-l-2 border-b-4 border-r-4 border-lime-600/90 text-[15px] sm:text-[17px] font-semibold"
                     onClick={() => (window.location.href = "#footer")}
                   >
                     Contactar ahora
@@ -787,7 +787,7 @@ export default function Servicios() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-t-2 border-l-2 border-b-4 border-r-4 border-white/90 text-white bg-transparent rounded-[32px] hover:bg-white/10 text-[17px] font-semibold"
+                    className="border-t-2 border-l-2 border-b-4 border-r-4 border-white/90 text-white bg-transparent rounded-[32px] hover:bg-white/10 text-[15px] sm:text-[17px] font-semibold"
                     onClick={() => (window.location.href = "/proyectos")}
                   >
                     Ver portfolio

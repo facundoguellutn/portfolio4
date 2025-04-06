@@ -72,7 +72,7 @@ const Contacto = () => {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:grid-rows-2 w-full maxScreen pb-20 lg:mb-20">
         <Card
           onClick={() => {
-            console.log("hola");
+            handleNavigate("/sobre-mi");
           }}
           className="col-span-1 row-span-1 overflow-hidden border-none bg-gradient-to-br from-slate-50 to-slate-100 shadow-lg transition-all hover:shadow-xl dark:from-slate-900 dark:to-slate-800"
         >
@@ -85,7 +85,7 @@ const Contacto = () => {
           </CardHeader>
           <CardContent className="relative flex h-40 items-center justify-center p-6">
             <Link
-              href="/about"
+              href="/sobre-mi"
               className="pointer-events-none text-center text-xl font-medium text-slate-800 dark:text-slate-200"
             >
               Descubre quién soy
