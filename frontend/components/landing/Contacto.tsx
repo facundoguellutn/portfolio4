@@ -160,7 +160,9 @@ const Contacto = () => {
           </Pointer>
         </Card>
 
-        <Card className="col-span-1 row-span-1 overflow-hidden border-none bg-gradient-to-br from-purple-50 to-purple-100 shadow-lg transition-all hover:shadow-xl dark:from-purple-900 dark:to-purple-800">
+        <Card className="col-span-1 row-span-1 overflow-hidden border-none bg-gradient-to-br from-purple-50 to-purple-100 shadow-lg transition-all hover:shadow-xl dark:from-purple-900 dark:to-purple-800"           onClick={() => {
+            handleNavigate("/servicios");
+          }}>
           <CardHeader className="relative pb-2">
             <CardTitle className="text-xl font-bold text-purple-700">
               Servicios

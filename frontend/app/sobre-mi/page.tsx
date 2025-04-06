@@ -74,9 +74,10 @@ const Page = () => {
             <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_80%,rgba(154,224,29,0.4),transparent_40%)]"></div>
           </div>
           <img
-            src="/images/servicios/hero.webp"
+            src="/images/sobremi/hero.webp"
             alt="Córdoba, Argentina"
             className="object-cover w-full h-full"
+            style={{ objectPosition: "center -50px" }}
           />
         </div>
 
@@ -148,8 +149,8 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-violet-100 px-10">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <section className="py-20 bg-violet-100 px-4">
+        <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
