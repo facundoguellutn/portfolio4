@@ -31,19 +31,19 @@ type SocialLink = {
 const SOCIAL_LINKS: SocialLink[] = [
   {
     label: "Github",
-    link: "https://github.com",
+    link: "https://github.com/facundoguellutn/",
   },
   {
-    label: "Twitter",
-    link: "https://twitter.com",
+    label: "Email",
+    link: "mailto:facundoguell@gmail.com",
   },
   {
     label: "LinkedIn",
-    link: "https://linkedin.com",
+    link: "https://www.linkedin.com/in/facundog%C3%BCell/",
   },
   {
     label: "Instagram",
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/facuguell/",
   },
 ];
 
@@ -58,8 +58,8 @@ const Contacto = () => {
 
   return (
     <div
-      className="w-full mt-20 relative lg:pt-20 flex flex-col items-center justify-center"
-      ref={ref}
+      className="w-full mt-20 relative lg:pt-20 flex flex-col items-center justify-center mb-20 xl:mb-[130px]"
+
     >
       <LetterSwapForward
         label="Secciones de interés para explorar"
@@ -69,7 +69,7 @@ const Contacto = () => {
       <h1 className="title  mb-6 flex md:hidden">
         Secciones de interés para explorar
       </h1>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:grid-rows-2 w-full maxScreen pb-20">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:grid-rows-2 w-full maxScreen pb-20 lg:mb-20">
         <Card
           onClick={() => {
             console.log("hola");
@@ -301,9 +301,9 @@ const Contacto = () => {
           </div>
         </div>
       ) : (
-        <div className="w-full hidden sm:flex  sm:h-[276px]"></div>
+        <div className="w-full hidden sm:flex  sm:h-[276px]" ref={ref}></div>
       )}
-      <span className="text-sm text-slate-500 mt-10">Mis Redes sociales</span>
+      <span className="text-sm text-slate-500 mt-10"       id="contacto">Mis Redes sociales</span>
       <div className="flex flex-wrap items-center justify-center space-x-3 pt-8 w-full gap-4">
         {SOCIAL_LINKS.map((link) => (
           <MagneticSocialLink key={link.label} link={link.link}>

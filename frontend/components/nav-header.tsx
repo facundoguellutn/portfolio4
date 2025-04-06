@@ -14,10 +14,10 @@ function NavHeader() {
     <ul
       className="relative mx-auto flex w-fit rounded-full border-2 border-slate-700 bg-white p-1"
       onMouseLeave={() => setPosition((pv) => ({ ...pv, opacity: 0 }))}>
-      <Tab setPosition={setPosition} href="#sobre-mi">Sobre mí</Tab>
-      <Tab setPosition={setPosition} href="#proyectos">Proyectos</Tab>
-      <Tab setPosition={setPosition} href="#servicios">Servicios</Tab>
-      <Tab setPosition={setPosition} href="#contacto">Contacto</Tab>
+      <Tab setPosition={setPosition} href="/sobre-mi">Sobre mí</Tab>
+      <Tab setPosition={setPosition} href="/proyectos">Proyectos</Tab>
+      <Tab setPosition={setPosition} href="/servicios">Servicios</Tab>
+      <Tab setPosition={setPosition} href="/#footer">Contacto</Tab>
 
       <Cursor position={position} />
     </ul>

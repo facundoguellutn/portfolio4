@@ -19,7 +19,6 @@ const Landing = () => {
         <ProjectsCarousel />
         <Tecnologias />
         <Contacto />
-        <div className='w-full mt-10 h-[500px]'></div>
     </div>
   )
 }
