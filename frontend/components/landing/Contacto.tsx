@@ -197,7 +197,9 @@ const Contacto = () => {
           </Pointer>
         </Card>
 
-        <Card className="col-span-1 row-span-1 overflow-hidden border-none bg-gradient-to-br from-green-50 to-green-100 shadow-lg transition-all hover:shadow-xl dark:from-green-900 dark:to-green-800">
+        <Card onClick={() => {
+            handleNavigate("/proyectos");
+          }} className="col-span-1 row-span-1 overflow-hidden border-none bg-gradient-to-br from-green-50 to-green-100 shadow-lg transition-all hover:shadow-xl dark:from-green-900 dark:to-green-800">
           <CardHeader className="relative pb-2">
             <CardTitle className="text-xl font-bold text-green-800">
               Proyectos
