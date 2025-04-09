@@ -19,8 +19,8 @@ const elementos = [
     {
       tipo: "appShowcase",
       data: {
-        appImage: "/images/proyectos/talent-phone.webp",
-        logoImage: "/images/proyectos/talent-logo.webp",
+        appImage: "/images/landing/talenttrack.webp",
+        logoImage: "/images/proyectos/talent/logo.webp",
         appUrl: "https://talenttrack.app",
         bgColorLeft: "#3C82F6",
         bgColorRight: "#F5F5F5",
@@ -36,13 +36,6 @@ const elementos = [
     },
   
     { tipo: "divider", altura: 48 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/talenttrack1.webp",
-        "/images/proyectos/talenttrack2.webp",
-      ],
-    },
     {
       tipo: "atributosMarca",
       subtitulo: "Valores de la Marca",
@@ -64,7 +57,7 @@ const elementos = [
       tipo: "fuenteDestacada",
       titulos: ["Evaluaciones","Indicadores", "Roles"],
       subtitulos: ["Objetivos", "Competencias", "Responsabilidades"],
-      imageUrl: "/images/proyectos/talent-ui.webp",
+      imageUrl: "/images/proyectos/talent/img1.webp",
       colorFondo: "bg-blue-100",
     },
   
@@ -82,8 +75,8 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/talenttrack3.webp",
-        "/images/proyectos/talenttrack4.webp",
+        "/images/proyectos/talent/img2.webp",
+        "/images/proyectos/talent/img3.webp",
       ],
     },
   
@@ -101,12 +94,12 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/talenttrack5.webp",
-        "/images/proyectos/talenttrack6.webp",
+        "/images/proyectos/talent/img4.webp",
+        "/images/proyectos/talent/img5.webp",
       ],
     },
   
-    { tipo: "divider", altura: 30 },
+    { tipo: "divider", altura: 80 },
     {
       tipo: "brandTypography",
       titulo: "Funcionalidades clave",
@@ -114,12 +107,12 @@ const elementos = [
         "Definición de etapas y períodos de evaluación, Gestión jerárquica de roles y usuarios, Evaluaciones por competencias, indicadores y objetivos, Feedback y seguimiento por parte del supervisor, Dashboard con resultados individuales y por empresa.",
     },
   
-    { tipo: "divider", altura: 20 },
+    { tipo: "divider", altura: 80 },
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/talenttrack7.webp",
-        "/images/proyectos/talenttrack8.webp",
+        "/images/proyectos/talent/img6.webp",
+        "/images/proyectos/talent/img7.webp",
       ],
     },
   

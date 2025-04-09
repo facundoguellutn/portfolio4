@@ -1,21 +1,28 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { ExternalLink } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
+import * as React from "react";
+import { ExternalLink } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Project = {
-  id: number
-  title: string
-  description: string
-  categories: string[]
-  image: string
-  color: string
-  link?: string
-}
+  id: number;
+  title: string;
+  description: string;
+  categories: string[];
+  image: string;
+  color: string;
+  link?: string;
+};
 
 const projects: Project[] = [
   {
@@ -25,7 +32,7 @@ const projects: Project[] = [
     categories: ["Web app", "Full stack"],
     image: "/images/landing/circular.webp",
     color: "#f5f5f5",
-    link: "#",
+    link: "/circular",
   },
   {
     id: 2,
@@ -34,7 +41,7 @@ const projects: Project[] = [
     categories: ["Web app", "Full stack"],
     image: "/images/landing/talenttrack.webp",
     color: "#d8cbf6",
-    link: "#",
+    link: "/talenttrack",
   },
   {
     id: 3,
@@ -43,7 +50,7 @@ const projects: Project[] = [
     categories: ["UI/UX", "Landing page"],
     image: "/images/landing/fido.webp",
     color: "#c9f0ff",
-    link: "#",
+    link: "/fido",
   },
   {
     id: 4,
@@ -52,7 +59,7 @@ const projects: Project[] = [
     categories: ["UI/UX", "Landing page"],
     image: "/images/landing/vienna.webp",
     color: "#f5f5f5",
-    link: "#",
+    link: "/viena",
   },
   {
     id: 5,
@@ -61,58 +68,71 @@ const projects: Project[] = [
     categories: ["UI/UX", "Landing page"],
     image: "/images/landing/aluam.webp",
     color: "#d8cbf6",
-    link: "#",
+    link: "/aluam",
   },
   {
     id: 6,
     title: "Conocete",
-    description: "Pagina de tests de personalidad para un curso de Liderazgo privado.",
+    description:
+      "Pagina de tests de personalidad para un curso de Liderazgo privado.",
     categories: ["Web app", "Full stack"],
     image: "/images/landing/conocete.webp",
     color: "#c9f0ff",
-    link: "#",
+    link: "/conocete",
   },
-]
+];
 
 export default function ProjectsCarousel() {
   return (
     <section className="w-full flex items-center justify-center flex-col mt-20 lg:pt-20 max-w-7xl mx-auto">
-        <div className="mb-10 lg:mb-12 text-start lg:text-center w-full">
-          <h2 className="title text-start lg:text-center">Proyectos Destacados</h2>
-          {/* <p className="shortDescription">
+      <div className="mb-10 lg:mb-12 text-start lg:text-center w-full">
+        <h2 className="title text-start lg:text-center">
+          Proyectos Destacados
+        </h2>
+        {/* <p className="shortDescription">
             Una selección de los proyectos en los que he trabajado, mostrando mi experiencia en diseño y desarrollo.
           </p> */}
-        </div>
+      </div>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full"
-        >
-          <CarouselContent className="-ml-2 md:-ml-4">
-            {projects.map((project) => (
-              <CarouselItem key={project.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                <ProjectCard project={project} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div className="flex justify-center gap-2 mt-8">
-            <CarouselPrevious className="relative static" />
-            <CarouselNext className="relative static" />
-          </div>
-        </Carousel>
+      <Carousel
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        className="w-full"
+      >
+        <CarouselContent className="-ml-2 md:-ml-4">
+          {projects.map((project) => (
+            <CarouselItem
+              key={project.id}
+              className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
+            >
+              <ProjectCard project={project} />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <div className="flex justify-center gap-2 mt-8">
+          <CarouselPrevious className="relative static" />
+          <CarouselNext className="relative static" />
+        </div>
+      </Carousel>
     </section>
-  )
+  );
 }
 
 function ProjectCard({ project }: { project: Project }) {
-  const [isHovered, setIsHovered] = React.useState(false)
+  const [isHovered, setIsHovered] = React.useState(false);
 
   return (
-    <div className="h-full" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-      <Card className="overflow-hidden border-0 h-[500px] rounded-xl" style={{ backgroundColor: project.color }}>
+    <div
+      className="h-full"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <Card
+        className="overflow-hidden border-0 h-[500px] rounded-xl"
+        style={{ backgroundColor: project.color }}
+      >
         <CardContent className="p-0 h-full flex flex-col">
           <div className="relative overflow-hidden h-[60%]">
             <img
@@ -136,7 +156,9 @@ function ProjectCard({ project }: { project: Project }) {
                 ))}
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 leading-none">{project.title}</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 leading-none">
+                {project.title}
+              </h3>
             </motion.div>
 
             <motion.div
@@ -149,18 +171,18 @@ function ProjectCard({ project }: { project: Project }) {
               transition={{ duration: 0.3 }}
             >
               <p className="text-slate-700 mb-4">{project.description}</p>
-
-              <Button
-                variant="ghost"
-                className="px-6 py-[2px] w-fit text-slate-900 font-medium hover:bg-transparent hover:text-slate-700 border-[1px] border-slate-400 rounded-full"
-              >
-                Explorar <ExternalLink size={16} className="ml-1" />
-              </Button>
+              <Link href={project.link || ""}>
+                <Button
+                  variant="ghost"
+                  className="px-6 py-[2px] w-fit text-slate-900 font-medium hover:bg-transparent hover:text-slate-700 border-[1px] border-slate-400 rounded-full"
+                >
+                  Explorar <ExternalLink size={16} className="ml-1" />
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </CardContent>
       </Card>
     </div>
-  )
+  );
 }
-

@@ -19,15 +19,16 @@ const elementos = [
     {
       tipo: "appShowcase",
       data: {
-        appImage: "/images/proyectos/viena-phone.webp",
-        logoImage: "/images/proyectos/viena-logo.webp",
+        appImage: "/images/landing/vienna.webp",
+        logoImage: "/images/proyectos/viena/logo.webp",
         appUrl: "https://vienaglobal.com",
-        bgColorLeft: "#E4D3BA",
+        bgColorLeft: "#BED3DE",
         bgColorRight: "#F5F5F5",
+        showLink: true,
       },
     },
   
-    { tipo: "divider", altura: 64 },
+    { tipo: "divider", altura: 90 },
     {
       tipo: "brandTypography",
       titulo: "Modernización y confianza",
@@ -35,14 +36,7 @@ const elementos = [
         "Viena Global necesitaba una web que reflejara su nueva identidad visual y su compromiso con el acompañamiento profesional en la compra y venta de propiedades. El foco estuvo en transmitir cercanía, claridad y seguridad desde el primer scroll.",
     },
   
-    { tipo: "divider", altura: 48 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/viena1.webp",
-        "/images/proyectos/viena2.webp",
-      ],
-    },
+    { tipo: "divider", altura: 80 },
     {
       tipo: "atributosMarca",
       subtitulo: "Identidad digital",
@@ -64,8 +58,8 @@ const elementos = [
       tipo: "fuenteDestacada",
       titulos: ["Ventas", "Alquileres"],
       subtitulos: ["Zonaprop", "Confianza", "Experiencia"],
-      imageUrl: "/images/proyectos/viena-ui.webp",
-      colorFondo: "bg-yellow-100",
+      imageUrl: "/images/proyectos/viena/img1.webp",
+      colorFondo: "bg-blue-100",
     },
   
     { tipo: "divider", altura: 32 },
@@ -78,15 +72,6 @@ const elementos = [
       texto:
         "Se diseñó una interfaz moderna, elegante y responsiva. Se utilizaron animaciones suaves, tipografías sobrias y colores cálidos para transmitir profesionalismo y transparencia. Cada sección fue pensada para facilitar el recorrido del usuario y generar confianza.",
     },
-    { tipo: "divider", altura: 28 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/viena3.webp",
-        "/images/proyectos/viena4.webp",
-      ],
-    },
-  
     { tipo: "divider", altura: 48 },
     {
       tipo: "titulo",
@@ -106,7 +91,7 @@ const elementos = [
       ],
     },
   
-    { tipo: "divider", altura: 30 },
+    { tipo: "divider", altura: 90 },
     {
       tipo: "brandTypography",
       titulo: "Componentes destacados",
@@ -114,7 +99,7 @@ const elementos = [
         "✔ Hero animado con llamada a la acción\n✔ Sección de pasos del proceso de compra/venta\n✔ Destacado de valores de la inmobiliaria\n✔ Acceso directo al portal de Zonaprop\n✔ Responsive total y optimización para SEO",
     },
   
-    { tipo: "divider", altura: 20 },
+    { tipo: "divider", altura: 80 },
     {
       tipo: "imagenes",
       urls: [

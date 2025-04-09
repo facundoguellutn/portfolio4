@@ -18,15 +18,15 @@ const elementos = [
     {
       tipo: "appShowcase",
       data: {
-        appImage: "/images/proyectos/fidooo-phone.webp",
-        logoImage: "/images/proyectos/fidooo-logo.webp",
-        appUrl: "https://fidooo.dev",
-        bgColorLeft: "#1E293B",
+        appImage: "/images/landing/fido.webp",
+        logoImage: "/images/proyectos/fido/logo.webp",
+        appUrl: "https://fidooo.com/",
+        bgColorLeft: "#1CBFFF",
         bgColorRight: "#F8FAFC",
       },
     },
   
-    { tipo: "divider", altura: 64 },
+    { tipo: "divider", altura: 90 },
     {
       tipo: "brandTypography",
       titulo: "Tecnología con personalidad",
@@ -34,14 +34,7 @@ const elementos = [
         "La idea fue crear una landing fresca, con movimiento y personalidad propia. Se trabajaron animaciones suaves, secciones diferenciadas y componentes que mostraran el dinamismo y profesionalismo de Fidooo desde el primer momento.",
     },
   
-    { tipo: "divider", altura: 48 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/fidooo1.webp",
-        "/images/proyectos/fidooo2.webp",
-      ],
-    },
+    { tipo: "divider", altura: 80 },
     {
       tipo: "atributosMarca",
       subtitulo: "Identidad visual",
@@ -63,7 +56,7 @@ const elementos = [
       tipo: "fuenteDestacada",
       titulos: ["Consultoría", "Desarrollo a Medida"],
       subtitulos: ["Software", "Estrategia", "Experiencia"],
-      imageUrl: "/images/proyectos/fidooo-ui.webp",
+      imageUrl: "/images/proyectos/fido/img1.webp",
       colorFondo: "bg-slate-100",
     },
   
@@ -81,8 +74,8 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/fidooo3.webp",
-        "/images/proyectos/fidooo4.webp",
+        "/images/proyectos/fido/img2.webp",
+        "/images/proyectos/fido/img3.webp",
       ],
     },
   
@@ -100,12 +93,12 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/fidooo5.webp",
-        "/images/proyectos/fidooo6.webp",
+        "/images/proyectos/fido/img4.webp",
+        "/images/proyectos/fido/img5.webp",
       ],
     },
   
-    { tipo: "divider", altura: 30 },
+    { tipo: "divider", altura: 100 },
     {
       tipo: "brandTypography",
       titulo: "Componentes destacados",
@@ -113,23 +106,8 @@ const elementos = [
         "✔ Hero animado con scroll\n✔ Sección de servicios con íconos y transiciones\n✔ Experiencia visual moderna y limpia\n✔ Efectos dinámicos para reforzar la narrativa\n✔ CTA clara al contacto y propuesta de valor",
     },
   
-    { tipo: "divider", altura: 20 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/fidooo7.webp",
-        "/images/proyectos/fidooo8.webp",
-      ],
-    },
-  
-    { tipo: "divider", altura: 32 },
-    {
-      tipo: "tecnologias",
-      items: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
-    },
-  
-    { tipo: "divider", altura: 64 },
-    {
+    { tipo: "divider", altura: 80 },
+      {
       tipo: "titulo",
       texto: "04. Impacto y resultado",
     },

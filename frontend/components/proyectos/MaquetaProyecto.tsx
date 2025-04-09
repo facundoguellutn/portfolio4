@@ -15,10 +15,11 @@ type AppShowcaseProps = {
   appUrl: string;
   bgColorLeft: string;
   bgColorRight: string;
+  showLink?: boolean;
 };
 
 type MaquetaElemento =
- { tipo: "mainTitle"; texto: string }
+  | { tipo: "mainTitle"; texto: string }
   | { tipo: "titulo"; texto: string }
   | { tipo: "subtitulo"; texto: string }
   | { tipo: "descripcion"; texto: string }
@@ -163,7 +164,7 @@ const MaquetaProyecto = ({
                       key={index}
                       src={img}
                       alt={`Imagen ${index}`}
-                      className="rounded-xl shadow-md object-cover w-full h-64"
+                      className="rounded-xl shadow-md object-cover w-full h-64 border-[1px] border-zinc-100"
                       initial={{ opacity: 0, scale: 0.95 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -299,7 +300,7 @@ const MaquetaProyecto = ({
               return (
                 <motion.div
                   key={i}
-                  className="flex flex-col lg:flex-row gap-8 items-center"
+                  className="flex flex-col lg:flex-row gap-4 lg:gap-8 items-center"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
@@ -310,7 +311,7 @@ const MaquetaProyecto = ({
                     </h2>
                   </div>
                   <div className="flex-1">
-                    <p className="text-lg text-zinc-600 leading-relaxed">
+                    <p className="text-lg text-zinc-600 leading-relaxed text-center lg:text-left">
                       {el.descripcion}
                     </p>
                   </div>
@@ -393,12 +394,7 @@ const MaquetaProyecto = ({
                     <motion.img
                       src={el.data.appImage}
                       alt="App showcase"
-                      className="
-        h-[90%] w-auto object-contain
-        mx-auto my-auto
-        relative
-        lg:absolute lg:-bottom-12 lg:-left-12
-      "
+                      className="h-[90%] w-auto object-contain mx-auto my-auto relative lg:absolute lg:-bottom-12 lg:-left-12"
                       style={{ imageRendering: "auto" }}
                       initial={{ opacity: 0, y: 50 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -429,21 +425,34 @@ const MaquetaProyecto = ({
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                      <a
-                        href={el.data.appUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-3 bg-[#f2f2f2] px-5 py-3 rounded-full"
-                      >
-                        <img
-                          src={el.data.logoImage}
-                          alt="Mini logo"
-                          className="w-5 h-5 object-contain"
-                        />
-                        <span className="text-zinc-800 font-medium text-sm md:text-base">
-                          {el.data.appUrl}
+                      {el.data.showLink ? (
+                        <a
+                          href={el.data.appUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-3 bg-[#f2f2f2] px-5 py-3 rounded-full"
+                        >
+                          <img
+                            src={el.data.logoImage}
+                            alt="Mini logo"
+                            className="w-5 h-5 object-contain"
+                          />
+                          <span className="text-zinc-800 font-medium text-sm md:text-base">
+                            {el.data.appUrl}
+                          </span>
+                        </a>
+                      ) : (
+                        <span className="flex items-center gap-3 bg-[#f2f2f2] px-5 py-3 rounded-full">
+                          <img
+                            src={el.data.logoImage}
+                            alt="Mini logo"
+                            className="w-5 h-5 object-contain"
+                          />
+                          <span className="text-zinc-800 font-medium text-sm md:text-base">
+                            {el.data.appUrl}
+                          </span>
                         </span>
-                      </a>
+                      )}
                     </motion.div>
                   </div>
                 </div>

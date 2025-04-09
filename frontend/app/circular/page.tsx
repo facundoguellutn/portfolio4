@@ -13,33 +13,27 @@ const elementos = [
     texto:
       "Circular Tech es una plataforma pensada para optimizar la operación logística de marcas del rubro de la indumentaria. Desarrollada con el objetivo de adaptarse a cualquier empresa del sector, ya está siendo utilizada por marcas reconocidas como Rotunda.",
   },
-  { tipo: "divider", altura: 32 },
+  { tipo: "divider", altura: 20 },
   {
     tipo: "appShowcase",
     data: {
-      appImage: "/images/proyectos/circular-phone.webp",
-      logoImage: "/images/proyectos/circular-logo.webp",
-      appUrl: "https://circulartech.app",
-      bgColorLeft: "#F15A2B",
-      bgColorRight: "#F2F2F2",
+      appImage: "/images/landing/circular.webp",
+      logoImage: "/images/proyectos/circular/logo.webp",
+      appUrl: "https://www.thecirculartech.com/",
+      bgColorLeft: "#2E3B51",
+      bgColorRight: "#B3B74F",
+      showLink: true,
     },
   },
 
-  { tipo: "divider", altura: 64 },
+  { tipo: "divider", altura: 80 },
   {
     tipo: "brandTypography",
     titulo: "Escucha activa",
     descripcion:
       "Desde el primer momento, se trabajó de cerca con los usuarios potenciales para entender sus dolores y necesidades operativas, especialmente en relación a cómo manejan los productos, proveedores y clientes.",
   },
-  { tipo: "divider", altura: 48 },
-  {
-    tipo: "imagenes",
-    urls: [
-      "/images/proyectos/circular1.webp",
-      "/images/proyectos/circular2.webp",
-    ],
-  },
+  { tipo: "divider", altura: 80 },
   {
     tipo: "atributosMarca",
     subtitulo: "Valores de la Marca",
@@ -61,7 +55,7 @@ const elementos = [
     tipo: "fuenteDestacada",
     titulos: ["Ordenes", "Productos Envíos"],
     subtitulos: ["Colores", "Materiales", "Telas"],
-    imageUrl: "/images/proyectos/circular-ui.webp",
+    imageUrl: "/images/proyectos/circular/img4.webp",
     colorFondo: "bg-indigo-100",
   },
 
@@ -79,8 +73,8 @@ const elementos = [
   {
     tipo: "imagenes",
     urls: [
-      "/images/proyectos/circular1.webp",
-      "/images/proyectos/circular2.webp",
+      "/images/proyectos/circular/img5.webp",
+      "/images/proyectos/circular/img6.webp",
     ],
   },
 
@@ -100,23 +94,23 @@ const elementos = [
   {
     tipo: "imagenes",
     urls: [
-      "/images/proyectos/circular1.webp",
-      "/images/proyectos/circular2.webp",
+      "/images/proyectos/circular/img3.webp",
+      "/images/proyectos/circular/img2.webp",
     ],
   },
-  { tipo: "divider", altura: 30 },
+  { tipo: "divider", altura: 80 },
   {
     tipo: "brandTypography",
     titulo: "Funcionalidades clave",
     descripcion:
       "Envío de invitaciones por email, Dashboard con métricas, Reportes en Excel de órdenes, productos y variantes, Subida y edición de imágenes para proveedores, Gestión por cuentas y usuarios",
   },
-  { tipo: "divider", altura: 20 },
+  { tipo: "divider", altura: 80 },
   {
     tipo: "imagenes",
     urls: [
-      "/images/proyectos/circular1.webp",
-      "/images/proyectos/circular2.webp",
+      "/images/proyectos/circular/img7.webp",
+      "/images/proyectos/circular/img8.webp",
     ],
   },
   { tipo: "divider", altura: 32 },
@@ -145,7 +139,7 @@ const elementos = [
       "Iteración continua",
     ],
   },
-  { tipo: "divider", altura: 32 },
+  { tipo: "divider", altura: 60 },
 
   {
     tipo: "brandTypography",
@@ -153,7 +147,7 @@ const elementos = [
     descripcion:
       "El sistema fue evolucionando no solo en funcionalidad sino también en cómo se estructuraban los datos para permitir mayor adaptabilidad, lo cual es clave cuando se trabaja con distintas empresas del mismo rubro.",
   },
-  { tipo: "divider", altura: 32 },
+  { tipo: "divider", altura: 60 },
   {
     tipo: "otrosProyectos",
     titulo: "Otros Proyectos",

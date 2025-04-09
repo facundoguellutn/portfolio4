@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 
 type Project = {
   id: number;
@@ -24,7 +25,7 @@ const projects: Project[] = [
     categories: ["Web app", "Full stack"],
     image: "/images/landing/circular.webp",
     color: "#f5f5f5",
-    link: "#",
+    link: "/circular",
   },
   {
     id: 2,
@@ -33,7 +34,7 @@ const projects: Project[] = [
     categories: ["Web app", "Full stack"],
     image: "/images/landing/talenttrack.webp",
     color: "#d8cbf6",
-    link: "#",
+    link: "/talenttrack",
   },
   {
     id: 3,
@@ -42,7 +43,7 @@ const projects: Project[] = [
     categories: ["UI/UX", "Landing page"],
     image: "/images/landing/fido.webp",
     color: "#c9f0ff",
-    link: "#",
+    link: "/fido",
   },
   {
     id: 4,
@@ -51,7 +52,7 @@ const projects: Project[] = [
     categories: ["UI/UX", "Landing page"],
     image: "/images/landing/vienna.webp",
     color: "#fef3c7",
-    link: "#",
+    link: "/viena",
   },
   {
     id: 5,
@@ -60,7 +61,7 @@ const projects: Project[] = [
     categories: ["UI/UX", "Landing page"],
     image: "/images/landing/aluam.webp",
     color: "#dcfce7",
-    link: "#",
+    link: "/aluam",
   },
   {
     id: 6,
@@ -70,7 +71,25 @@ const projects: Project[] = [
     categories: ["Web app", "Full stack"],
     image: "/images/landing/conocete.webp",
     color: "#ede9fe",
-    link: "#",
+    link: "/conocete",
+  },
+  {
+    id: 7,
+    title: "People&Franq",
+    description: "Plataforma de gestión de talentos.",
+    categories: ["Web app", "Full stack"],
+    image: "/images/landing/talenttrack.webp",
+    color: "#d8cbf6",
+    link: "/peopleandfranq",
+  },
+  {
+    id: 8,
+    title: "Portfolio personal",
+    description: "Portfolio personal.",
+    categories: ["Web app", "Full stack"],
+    image: "/images/landing/talenttrack.webp",
+    color: "#f5f5f5",
+    link: "/portfolio",
   },
 ];
 
@@ -123,8 +142,7 @@ const Page = () => {
             className="text-center"
           >
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Mis{" "}
-              <span className="text-lime-400">Proyectos</span>
+              Mis <span className="text-lime-400">Proyectos</span>
             </h1>
             <p className="text-xl md:text-2xl text-zinc-300 max-w-3xl mx-auto mb-12">
               Aquí encontrarás algunos de los proyectos en los que he trabajado.
@@ -160,7 +178,10 @@ const Page = () => {
           </motion.div>
         </div>
       </section>
-      <section ref={projectsRef} className="container mx-auto px-4 mt-20 pt-20 max-w-8xl pb-20 mb-20">
+      <section
+        ref={projectsRef}
+        className="container mx-auto px-4 mt-20 pt-20 max-w-8xl pb-20 mb-20"
+      >
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-4">
             Proyectos destacados
@@ -177,7 +198,9 @@ const Page = () => {
               <motion.div
                 key={project.id}
                 initial={{ opacity: 0, y: 50 }}
-                animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                animate={
+                  isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+                }
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 exit={{ opacity: 0, y: 50 }}
               >
@@ -240,13 +263,14 @@ function ProjectCard({ project }: { project: Project }) {
               transition={{ duration: 0.3 }}
             >
               <p className="text-slate-700 mb-4">{project.description}</p>
-
-              <Button
-                variant="ghost"
-                className="px-6 py-[2px] w-fit text-slate-900 font-medium hover:bg-transparent hover:text-slate-700 border-[1px] border-slate-400 rounded-full"
-              >
-                Explorar <ExternalLink size={16} className="ml-1" />
-              </Button>
+              <Link href={project.link || ""}>
+                <Button
+                  variant="ghost"
+                  className="px-6 py-[2px] w-fit text-slate-900 font-medium hover:bg-transparent hover:text-slate-700 border-[1px] border-slate-400 rounded-full"
+                >
+                  Explorar <ExternalLink size={16} className="ml-1" />
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </CardContent>
