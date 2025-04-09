@@ -156,9 +156,9 @@ const elementos = [
       tipo: "otrosProyectos",
       titulo: "Otros Proyectos",
       proyectos: [
-        { titulo: "Circular Tech", link: "/proyectos/circular" },
-        { titulo: "Conocete", link: "/proyectos/conocete" },
-        { titulo: "E-commerce Dashboard", link: "/proyectos/ecommerce" },
+        { titulo: "Circular Tech", link: "/circular" },
+        { titulo: "Conocete", link: "/conocete" },
+        { titulo: "Fidooo", link: "/fido" },
       ],
     },
   ];

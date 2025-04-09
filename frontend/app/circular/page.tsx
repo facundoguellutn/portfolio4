@@ -152,9 +152,9 @@ const elementos = [
     tipo: "otrosProyectos",
     titulo: "Otros Proyectos",
     proyectos: [
-      { titulo: "Conocete", link: "/proyectos/conocete" },
-      { titulo: "E-commerce Dashboard", link: "/proyectos/ecommerce" },
-      { titulo: "App de Gestión", link: "/proyectos/gestion" },
+      { titulo: "Conocete", link: "/conocete" },
+      { titulo: "People&Franq", link: "/peopleandfranq" },
+      { titulo: "Portfolio personal", link: "/portfolio" },
     ],
   },
 ];

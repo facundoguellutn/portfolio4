@@ -4,6 +4,7 @@ import { LayoutGroup, motion, AnimatePresence } from "framer-motion";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { Download, Mail } from "lucide-react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -66,13 +67,13 @@ const Hero = () => {
           </p>
 
           <div className="pt-4 sm:pt-6 w-full flex flex-wrap sm:flex-nowrap gap-3 sm:gap-4 items-center justify-center">
-            <a
-              href="#footer"
+            <button
+              onClick={() => window.open("mailto:facundoguell@gmail.com")}
               className="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-slate-800/90 text-white text-sm sm:text-base rounded-[32px] hover:bg-slate-800/70 border-b-4 border-r-4  border-slate-800/90 hover:border-slate-900/70 transition-colors whitespace-nowrap"
             >
               <Mail size={16} className="sm:size-18" />
               <span>Contacto</span>
-            </a>
+            </button>
             <button
               className="flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 border-t-2 border-l-2 border-b-4 border-r-4 border-slate-800/90 text-slate-800 text-sm sm:text-base rounded-[32px] hover:bg-slate-800/10 transition-colors whitespace-nowrap"
               onClick={() => window.open("/cv.pdf", "_blank")}

@@ -305,13 +305,13 @@ const MaquetaProyecto = ({
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <div className="flex-1">
-                    <h2 className="text-2xl lg:text-4xl font-semibold text-zinc-800 tracking-tight">
+                  <div className="lg:flex-1 w-full">
+                    <h2 className="text-2xl lg:text-4xl font-semibold text-zinc-800 tracking-tight text-left md:text-center lg:text-left ">
                       {el.titulo}
                     </h2>
                   </div>
                   <div className="flex-1">
-                    <p className="text-lg text-zinc-600 leading-relaxed text-center lg:text-left">
+                    <p className="text-lg text-zinc-600 leading-relaxed text-start md:text-center lg:text-left">
                       {el.descripcion}
                     </p>
                   </div>

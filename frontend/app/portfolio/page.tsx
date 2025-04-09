@@ -15,18 +15,9 @@ const elementos = [
     },
   
     { tipo: "divider", altura: 32 },
-    {
-      tipo: "appShowcase",
-      data: {
-        appImage: "/images/proyectos/portfolio-phone.webp",
-        logoImage: "/images/proyectos/portfolio-logo.webp",
-        appUrl: "https://facundo.dev",
-        bgColorLeft: "#111827",
-        bgColorRight: "#F3F4F6",
-      },
-    },
+    {tipo:"boton", texto: "Ver mi primer portfolio", link: "https://portfolio-guellfacundo.vercel.app/"},
   
-    { tipo: "divider", altura: 64 },
+    { tipo: "divider", altura: 90 },
     {
       tipo: "brandTypography",
       titulo: "Mi historia en código",
@@ -34,14 +25,7 @@ const elementos = [
         "Este portfolio no es sólo un proyecto más, es una línea de tiempo de cómo fui creciendo como profesional. Cada versión cuenta algo distinto de mí: desde mis ganas de jugar, hasta mi foco en lo funcional y ahora, mi búsqueda de identidad.",
     },
   
-    { tipo: "divider", altura: 48 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/portfolio-v1.webp",
-        "/images/proyectos/portfolio-v2.webp",
-      ],
-    },
+    { tipo: "divider", altura: 80 },
     {
       tipo: "atributosMarca",
       subtitulo: "Etapas del portfolio",
@@ -63,8 +47,8 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/portfolio-v1-detail.webp",
-        "/images/proyectos/portfolio-v1-scroll.webp",
+        "/images/proyectos/portfolio/img6.webp",
+        "/images/proyectos/portfolio/img1.webp",
       ],
     },
   
@@ -82,11 +66,14 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/portfolio-v2-detail.webp",
-        "/images/proyectos/portfolio-v2-ui.webp",
+        "/images/proyectos/portfolio/img3.webp",
+        "/images/proyectos/portfolio/img4.webp",
       ],
     },
-  
+    { tipo: "divider", altura: 48 },
+
+    {tipo:"boton", texto: "Ver mi segundo portfolio", link: "https://facundoguell.vercel.app/"},
+
     { tipo: "divider", altura: 48 },
     {
       tipo: "titulo",
@@ -98,7 +85,7 @@ const elementos = [
         "La versión que estás viendo ahora es la síntesis de todo lo anterior. Retomo lo creativo, lo lúdico y lo visual de la primera versión, pero con la estructura y solidez de la segunda. Una experiencia que invita a explorar y que al mismo tiempo comunica profesionalismo.",
     },
   
-    { tipo: "divider", altura: 30 },
+    { tipo: "divider", altura: 100 },
     {
       tipo: "brandTypography",
       titulo: "Qué busqué lograr",
@@ -106,14 +93,7 @@ const elementos = [
         "✔ Mostrar mi personalidad como desarrollador\n✔ Equilibrar lo visual y lo funcional\n✔ Invitar a descubrir mi trabajo como algo más que un listado\n✔ Crear una experiencia que represente quién soy hoy",
     },
   
-    { tipo: "divider", altura: 20 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/portfolio-current1.webp",
-        "/images/proyectos/portfolio-current2.webp",
-      ],
-    },
+    { tipo: "divider", altura: 90 },
   
     { tipo: "divider", altura: 32 },
     {
@@ -142,7 +122,7 @@ const elementos = [
       ],
     },
   
-    { tipo: "divider", altura: 32 },
+    { tipo: "divider", altura: 100 },
     {
       tipo: "brandTypography",
       titulo: "Siempre en construcción",
@@ -150,14 +130,14 @@ const elementos = [
         "Este portfolio no está terminado. Es un proyecto vivo que va creciendo conmigo. Lo actualizo, lo reviso y lo dejo evolucionar, igual que yo como desarrollador.",
     },
   
-    { tipo: "divider", altura: 32 },
+    { tipo: "divider", altura: 100 },
     {
       tipo: "otrosProyectos",
       titulo: "Otros Proyectos",
       proyectos: [
-        { titulo: "People&Franq", link: "/proyectos/peopleandfranq" },
-        { titulo: "Conocete", link: "/proyectos/conocete" },
-        { titulo: "TalentTrack", link: "/proyectos/talenttrack" },
+        { titulo: "People&Franq", link: "/peopleandfranq" },
+        { titulo: "Conocete", link: "/conocete" },
+        { titulo: "TalentTrack", link: "/talenttrack" },
       ],
     },
   ];

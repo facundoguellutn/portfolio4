@@ -140,9 +140,9 @@ const elementos = [
       tipo: "otrosProyectos",
       titulo: "Otros Proyectos",
       proyectos: [
-        { titulo: "Viena Global", link: "/proyectos/viena" },
-        { titulo: "TalentTrack", link: "/proyectos/talenttrack" },
-        { titulo: "People&Franq", link: "/proyectos/peopleandfranq" },
+        { titulo: "Viena Global", link: "/viena" },
+        { titulo: "TalentTrack", link: "/talenttrack" },
+        { titulo: "People&Franq", link: "/peopleandfranq" },
       ],
     },
   ];

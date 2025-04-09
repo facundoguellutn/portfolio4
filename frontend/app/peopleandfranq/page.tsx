@@ -18,10 +18,10 @@ const elementos = [
     {
       tipo: "appShowcase",
       data: {
-        appImage: "/images/proyectos/people-phone.webp",
-        logoImage: "/images/proyectos/people-logo.webp",
+        appImage: "/images/landing/people.webp",
+        logoImage: "/images/proyectos/people/logo.webp",
         appUrl: "https://peopleandfranq.app",
-        bgColorLeft: "#0C6B58",
+        bgColorLeft: "#E99176",
         bgColorRight: "#F3F4F6",
       },
     },
@@ -35,13 +35,6 @@ const elementos = [
     },
   
     { tipo: "divider", altura: 48 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/people1.webp",
-        "/images/proyectos/people2.webp",
-      ],
-    },
     {
       tipo: "atributosMarca",
       subtitulo: "Pilares del sistema",
@@ -63,7 +56,7 @@ const elementos = [
       tipo: "fuenteDestacada",
       titulos: ["Plantillas", "Evaluaciones"],
       subtitulos: ["Feedback", "Seguimiento", "Desempeño"],
-      imageUrl: "/images/proyectos/people-ui.webp",
+      imageUrl: "/images/proyectos/people/img1.webp",
       colorFondo: "bg-emerald-100",
     },
   
@@ -81,8 +74,8 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/people3.webp",
-        "/images/proyectos/people4.webp",
+        "/images/proyectos/people/img2.webp",
+        "/images/proyectos/people/img3.webp",
       ],
     },
   
@@ -100,12 +93,12 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/people5.webp",
-        "/images/proyectos/people6.webp",
+        "/images/proyectos/people/img4.webp",
+        "/images/proyectos/people/img1.webp",
       ],
     },
   
-    { tipo: "divider", altura: 30 },
+    { tipo: "divider", altura: 90 },
     {
       tipo: "brandTypography",
       titulo: "Funcionalidades clave",
@@ -113,15 +106,7 @@ const elementos = [
         "✔ Creación de plantillas personalizadas\n✔ Asignación de evaluaciones por cliente\n✔ Visualización de resultados individuales o globales\n✔ Informe de seguimiento\n✔ Accesos diferenciados para consultora y clientes",
     },
   
-    { tipo: "divider", altura: 20 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/people7.webp",
-        "/images/proyectos/people8.webp",
-      ],
-    },
-  
+    { tipo: "divider", altura: 80 },
     { tipo: "divider", altura: 32 },
     {
       tipo: "tecnologias",
@@ -162,9 +147,9 @@ const elementos = [
       tipo: "otrosProyectos",
       titulo: "Otros Proyectos",
       proyectos: [
-        { titulo: "TalentTrack", link: "/proyectos/talenttrack" },
-        { titulo: "Circular Tech", link: "/proyectos/circular" },
-        { titulo: "Conocete", link: "/proyectos/conocete" },
+        { titulo: "TalentTrack", link: "/talenttrack" },
+        { titulo: "Circular Tech", link: "/circular" },
+        { titulo: "Conocete", link: "/conocete" },
       ],
     },
   ];

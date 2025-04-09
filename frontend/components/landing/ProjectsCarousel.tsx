@@ -80,11 +80,29 @@ const projects: Project[] = [
     color: "#c9f0ff",
     link: "/conocete",
   },
+  {
+    id: 7,
+    title: "People&Franq",
+    description: "Plataforma de gestión de talentos.",
+    categories: ["Web app", "Full stack"],
+    image: "/images/landing/people.webp",
+    color: "#d8cbf6",
+    link: "/peopleandfranq",
+  },
+  {
+    id: 8,
+    title: "Portfolio personal",
+    description: "Portfolio personal.",
+    categories: ["Web app", "Full stack"],
+    image: "/images/landing/portfolio.webp",
+    color: "#f5f5f5",
+    link: "/portfolio",
+  },
 ];
 
 export default function ProjectsCarousel() {
   return (
-    <section className="w-full flex items-center justify-center flex-col mt-20 lg:pt-20 max-w-7xl mx-auto">
+    <section className="w-full flex items-center justify-center flex-col mt-20 lg:pt-20 max-w-7xl mx-auto" id="proyectos">
       <div className="mb-10 lg:mb-12 text-start lg:text-center w-full">
         <h2 className="title text-start lg:text-center">
           Proyectos Destacados

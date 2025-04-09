@@ -18,15 +18,16 @@ const elementos = [
     {
       tipo: "appShowcase",
       data: {
-        appImage: "/images/proyectos/aluam-phone.webp",
-        logoImage: "/images/proyectos/aluam-logo.webp",
-        appUrl: "https://aluam.com.ar",
-        bgColorLeft: "#D9D9D9",
+        appImage: "/images/landing/aluam.webp",
+        logoImage: "/images/proyectos/aluam/logo.webp",
+        appUrl: "https://aluamsl.com/",
+        bgColorLeft: "#EE8E70",
         bgColorRight: "#F8F9FA",
+        showLink: true,
       },
     },
   
-    { tipo: "divider", altura: 64 },
+    { tipo: "divider", altura: 90 },
     {
       tipo: "brandTypography",
       titulo: "Calidad, trayectoria y presencia",
@@ -34,14 +35,7 @@ const elementos = [
         "La web fue pensada para comunicar los valores de Aluam: experiencia, profesionalismo, compromiso con el cliente y calidad de materiales. Era clave brindar una navegación clara, con foco tanto en productos como en el valor de los proyectos ya realizados.",
     },
   
-    { tipo: "divider", altura: 48 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/aluam1.webp",
-        "/images/proyectos/aluam2.webp",
-      ],
-    },
+    { tipo: "divider", altura: 80 },
     {
       tipo: "atributosMarca",
       subtitulo: "Valores de Aluam",
@@ -63,8 +57,8 @@ const elementos = [
       tipo: "fuenteDestacada",
       titulos: ["Catálogo", "Proyectos", "Técnica"],
       subtitulos: ["Materiales", "Diseño", "Obras"],
-      imageUrl: "/images/proyectos/aluam-ui.webp",
-      colorFondo: "bg-neutral-100",
+      imageUrl: "/images/proyectos/aluam/img1.webp",
+      colorFondo: "bg-orange-100",
     },
   
     { tipo: "divider", altura: 32 },
@@ -81,8 +75,8 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/aluam3.webp",
-        "/images/proyectos/aluam4.webp",
+        "/images/proyectos/aluam/img2.webp",
+        "/images/proyectos/aluam/img3.webp",
       ],
     },
   
@@ -100,29 +94,19 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/aluam5.webp",
-        "/images/proyectos/aluam6.webp",
+        "/images/proyectos/aluam/img4.webp",
+        "/images/proyectos/aluam/img5.webp",
       ],
     },
   
-    { tipo: "divider", altura: 30 },
+    { tipo: "divider", altura: 90 },
     {
       tipo: "brandTypography",
       titulo: "Secciones clave",
       descripcion:
         "✔ Catálogo dividido por categoría (ventanas, puertas, frentes, etc.)\n✔ Fichas técnicas descargables\n✔ Galería de proyectos realizados\n✔ Videos de obras filmadas con drones\n✔ Formulario de contacto con CTA claro",
-    },
-  
-    { tipo: "divider", altura: 20 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/aluam7.webp",
-        "/images/proyectos/aluam8.webp",
-      ],
-    },
-  
-    { tipo: "divider", altura: 32 },
+    },  
+    { tipo: "divider", altura: 80 },
     {
       tipo: "tecnologias",
       items: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
@@ -162,9 +146,9 @@ const elementos = [
       tipo: "otrosProyectos",
       titulo: "Otros Proyectos",
       proyectos: [
-        { titulo: "Fidooo", link: "/proyectos/fidooo" },
-        { titulo: "Viena Global", link: "/proyectos/viena" },
-        { titulo: "TalentTrack", link: "/proyectos/talenttrack" },
+        { titulo: "Fidooo", link: "/fido" },
+        { titulo: "Viena Global", link: "/viena" },
+        { titulo: "TalentTrack", link: "/talenttrack" },
       ],
     },
   ];

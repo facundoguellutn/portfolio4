@@ -18,15 +18,15 @@ const elementos = [
     {
       tipo: "appShowcase",
       data: {
-        appImage: "/images/proyectos/conocete-phone.webp",
-        logoImage: "/images/proyectos/conocete-logo.webp",
+        appImage: "/images/landing/conocete.webp",
+        logoImage: "/images/proyectos/conocete/logo.webp",
         appUrl: "https://conocete.app",
-        bgColorLeft: "#6C63FF",
+        bgColorLeft: "#7EA8D9",
         bgColorRight: "#F5F5F5",
       },
     },
   
-    { tipo: "divider", altura: 64 },
+    { tipo: "divider", altura: 90 },
     {
       tipo: "brandTypography",
       titulo: "Autoconocimiento como base del liderazgo",
@@ -34,14 +34,7 @@ const elementos = [
         "El objetivo principal fue brindar a los estudiantes una herramienta donde pudieran autoevaluarse en distintos aspectos, generar su propio perfil y fomentar el crecimiento personal y profesional.",
     },
   
-    { tipo: "divider", altura: 48 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/conocete1.webp",
-        "/images/proyectos/conocete2.webp",
-      ],
-    },
+    { tipo: "divider", altura: 80 },
     {
       tipo: "atributosMarca",
       subtitulo: "Valores de la Plataforma",
@@ -63,7 +56,7 @@ const elementos = [
       tipo: "fuenteDestacada",
       titulos: ["Liderazgo", "Empatía", "Comunicación"],
       subtitulos: ["Evaluación", "Autoanálisis", "Perfil Personal"],
-      imageUrl: "/images/proyectos/conocete-ui.webp",
+      imageUrl: "/images/proyectos/conocete/img1.webp",
       colorFondo: "bg-violet-100",
     },
   
@@ -81,8 +74,8 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/conocete3.webp",
-        "/images/proyectos/conocete4.webp",
+        "/images/proyectos/conocete/img2.webp",
+        "/images/proyectos/conocete/img3.webp",
       ],
     },
   
@@ -100,29 +93,19 @@ const elementos = [
     {
       tipo: "imagenes",
       urls: [
-        "/images/proyectos/conocete5.webp",
-        "/images/proyectos/conocete6.webp",
+        "/images/proyectos/conocete/img4.webp",
+        "/images/proyectos/conocete/img1.webp",
       ],
     },
   
-    { tipo: "divider", altura: 30 },
+    { tipo: "divider", altura: 90 },
     {
       tipo: "brandTypography",
       titulo: "Funcionalidades clave",
       descripcion:
         "Creación de grupos y evaluaciones por gestor, Diversidad de tipos de test (sí/no, escala, opciones múltiples), Resultados personalizados y recomendaciones, Perfiles visuales con insights sobre el estilo de liderazgo, Visualización privada de resultados.",
     },
-  
-    { tipo: "divider", altura: 20 },
-    {
-      tipo: "imagenes",
-      urls: [
-        "/images/proyectos/conocete7.webp",
-        "/images/proyectos/conocete8.webp",
-      ],
-    },
-  
-    { tipo: "divider", altura: 32 },
+    { tipo: "divider", altura: 80 },
     {
       tipo: "tecnologias",
       items: ["Next.js", "Firebase", "Firestore", "Tailwind CSS", "TypeScript"],
@@ -162,9 +145,9 @@ const elementos = [
       tipo: "otrosProyectos",
       titulo: "Otros Proyectos",
       proyectos: [
-        { titulo: "TalentTrack", link: "/proyectos/talenttrack" },
-        { titulo: "Circular Tech", link: "/proyectos/circular" },
-        { titulo: "E-commerce Dashboard", link: "/proyectos/ecommerce" },
+        { titulo: "TalentTrack", link: "/talenttrack" },
+        { titulo: "Circular Tech", link: "/circular" },
+        { titulo: "Portfolio personal", link: "/portfolio" },
       ],
     },
   ];
