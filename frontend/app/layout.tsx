@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     title: "Facundo Güell",
     description: "Portfolio personal de Facundo Güell",
     siteName: "Facundo Güell",
+    images: [
+      {
+        url: "https://facuguell.vercel.app/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Facundo Güell - Portfolio personal",
+      },
+    ],
   },
 };
 
