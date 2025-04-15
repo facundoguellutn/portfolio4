@@ -37,6 +37,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:title" content="Facundo Güell" />
+        <meta property="og:description" content="Portfolio personal de Facundo Güell" />
+        <meta property="og:image" content="https://facuguell.vercel.app/opengraph-image.png" />
+        <meta property="og:url" content="https://facuguell.vercel.app/" />
+        <meta property="og:type" content="website" />
+      </head>
       <body className={`${outfit.className} w-screen overflow-x-hidden `}>
         <header className="justify-center items-center w-full fixed z-50 ">
           <div className="w-full lg:flex hidden  pt-6 ">
