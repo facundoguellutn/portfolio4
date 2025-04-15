@@ -4,6 +4,7 @@ import "./globals.css";
 import NavHeader from "@/components/nav-header";
 import NavMobile from "@/components/mobileNav/NavMobile";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 const outfit = Outfit({ subsets: ["latin"] });
@@ -49,6 +50,7 @@ export default function RootLayout({
           accentColor="#D0D2FF"
           logo="/images/landing/yoGibli.webp"
         />
+        <Analytics />
       </body>
     </html>
   );
