@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Portfolio personal de Facundo Güell",
   openGraph: {
     type: "website",
-    url: "https://facundoguell.vercel.app/",
+    url: "https://facuguell.vercel.app/",
     locale: "es_ES",
     title: "Facundo Güell",
     description: "Portfolio personal de Facundo Güell",
